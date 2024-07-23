@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario con PHP y MySQL</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <center><h2><em>Formulario con PHP y MySQL</em></h2> </center> 
+
+    <!-- se mandan las cosas al PHP usando POST, igualito que con Django -->
+    <form action="registro.php" method="POST">  <!-- AQUÍ ES DONDE SE LLAMA AL .PHP -->    
+        <center> 
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" required/>   
+            
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" required/>         
+            
+            <input name="submit" type="submit" value="Ingresar" />
+
+        </center>
+    </form>
+
+</body>
+</html>
